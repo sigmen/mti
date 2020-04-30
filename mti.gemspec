@@ -5,7 +5,7 @@ require 'mti/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'mti'
-  spec.version       = Mti::VERSION
+  spec.version       = MTI::VERSION
   spec.authors       = ['Roman Kakorin']
   spec.email         = ['romchky1@gmail.com']
 

@@ -1,5 +1,5 @@
-RSpec.describe Mti do
+RSpec.describe MTI do
   it 'has a version number' do
-    expect(Mti::VERSION).not_to be nil
+    expect(MTI::VERSION).not_to be nil
   end
 end
