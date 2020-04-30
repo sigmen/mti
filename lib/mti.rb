@@ -1,6 +1,4 @@
-require "mti/version"
+require 'mti/version'
 
-module Mti
-  class Error < StandardError; end
-  # Your code goes here...
+module MTI
 end
