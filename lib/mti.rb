@@ -2,5 +2,5 @@ require 'mti/version'
 require 'mti/railtie' if defined?(Rails::Railtie)
 
 module MTI
-  class UnsupportedError < StandardError; end
+  class TableNotInheritedError < StandardError; end
 end

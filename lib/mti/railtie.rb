@@ -1,12 +1,12 @@
-require 'mti/connection_adapter/postgresql/schema_statements'
+require 'mti/active_record/schema_statements'
 
 module MTI
   class Railtie < Rails::Railtie
-    initializer 'mti' do |_app|
+    initializer 'mti' do
       ActiveSupport.on_load(:active_record) do
-        adapter_klass = ActiveRecord::ConnectionAdapters::PostgreSQLAdapter
+        adapter_klass = ::ActiveRecord::ConnectionAdapters::PostgreSQLAdapter
 
-        adapter_klass.prepend(ConnectionAdapter::PostgreSQL::SchemaStatements)
+        adapter_klass.prepend(MTI::ActiveRecord::SchemaStatements)
       end
     end
   end
