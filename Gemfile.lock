@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mti (0.1.0)
+    pg_inheritance (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -27,7 +27,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.17)
-  mti!
+  pg_inheritance!
   rake (~> 12.3.3)
   rspec (~> 3.0)
 
