@@ -3,10 +3,6 @@
 
 # UNDER DEVELOPMENT
 
-**Supports**
-- Ruby: `2.6.0+`
-- ActiveRecord: `6.0+`
-
 ## Installation
 
 Add this line to your application's Gemfile:
