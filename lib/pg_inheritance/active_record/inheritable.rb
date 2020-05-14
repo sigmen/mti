@@ -25,9 +25,10 @@ module PGInheritance
 
       def select_parents_query(table_name)
         <<-SQL
-          SELECT pg_class.relname
+          SELECT pg_namespace.nspname, pg_class.relname
           FROM pg_catalog.pg_inherits
-          INNER JOIN pg_catalog.pg_class ON (pg_inherits.inhparent = pg_class.oid)
+            INNER JOIN pg_catalog.pg_class ON (pg_inherits.inhparent = pg_class.oid)
+            INNER JOIN pg_catalog.pg_namespace ON (pg_class.relnamespace = pg_namespace.oid)
           WHERE inhrelid = '#{table_name}'::regclass
         SQL
       end
