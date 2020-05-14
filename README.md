@@ -1,5 +1,5 @@
 # PG Inheritance
-[![Gem Version](https://badge.fury.io/rb/pg_inheritance.svg)](https://badge.fury.io/rb/pg_inheritance)[![Build Status](https://travis-ci.com/sigmen/pg_inheritance.svg?branch=master)](https://travis-ci.com/sigmen/pg_inheritance)
+[![Gem Version](https://badge.fury.io/rb/pg_inheritance.svg)](https://badge.fury.io/rb/pg_inheritance) [![Build Status](https://travis-ci.com/sigmen/pg_inheritance.svg?branch=master)](https://travis-ci.com/sigmen/pg_inheritance)
 
 # UNDER DEVELOPMENT
 
