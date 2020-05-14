@@ -1,17 +1,17 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require 'mti/version'
+require 'pg_inheritance/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'mti'
-  spec.version       = MTI::VERSION
+  spec.name          = 'pg_inheritance'
+  spec.version       = PGInheritance::VERSION
   spec.authors       = ['Roman Kakorin']
   spec.email         = ['romchky1@gmail.com']
 
   spec.summary       = 'Gem implements multitable iheritance.'
   spec.description   = 'Gem implements multitable iheritance.'
-  spec.homepage      = 'https://github.com/sigmen/mti'
+  spec.homepage      = 'https://github.com/sigmen/pg_inheritance'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = spec.homepage
-  spec.metadata['changelog_uri'] = 'http://github.com/sigmen/mti/blob/master/CHANGELOG.md'
+  spec.metadata['changelog_uri'] = 'http://github.com/sigmen/pg_inheritance/blob/master/CHANGELOG.md'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

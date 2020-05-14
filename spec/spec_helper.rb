@@ -1,5 +1,5 @@
 require 'bundler/setup'
-require 'mti'
+require 'pg_inheritance'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
