@@ -1,10 +1,25 @@
 # PG Inheritance
-[![Build Status](https://travis-ci.com/sigmen/pg_inheritance.svg?branch=master)](https://travis-ci.com/sigmen/pg_inheritance)
+[![Gem Version](https://badge.fury.io/rb/pg_inheritance.svg)](https://badge.fury.io/rb/pg_inheritance)[![Build Status](https://travis-ci.com/sigmen/pg_inheritance.svg?branch=master)](https://travis-ci.com/sigmen/pg_inheritance)
 
 # UNDER DEVELOPMENT
 
-### Supported ORM
-* ActiveRecord 6.0+
+**Supports**
+- Ruby: `2.6.0+`
+- ActiveRecord: `6.0+`
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+    gem 'pg_inheritance'
+
+And then execute:
+
+    $ bundle install
+
+Or install with:
+
+    $ gem install pg_inheritance
 
 ### Migrations
 
