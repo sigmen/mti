@@ -3,6 +3,10 @@
 
 # UNDER DEVELOPMENT
 
+## Supports
+
+Tested on ActiveRecord `5.x`, `6.x`.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -39,7 +43,7 @@ After migrations members has available both columns.
 
 ### Drop inheritance
 
-In your migration call drop_inheritance method. This has no options.
+In your migration call drop_inheritance method.
 
 ```ruby
 class DropMemberUsersInheritance < ActiveRecord::Migration
@@ -49,4 +53,8 @@ class DropMemberUsersInheritance < ActiveRecord::Migration
 end
 ```
 
-If inheritance exists this will be undeclared, but columns at inherited table will still be available. Otherwise will be raised an exception.
+#### Options
+
+* with_columns - if `true` then inherited columns will be dropped.
+
+If inheritance has not exists it raises an exception.
