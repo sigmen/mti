@@ -28,7 +28,7 @@ class CreateMembers < ActiveRecord::Migration
       t.string :name
     end
 
-    create_table :members, inherited_from: :users do |t|
+    create_table :members, inherits: :users do |t|
       t.string :logo_url
     end
   end

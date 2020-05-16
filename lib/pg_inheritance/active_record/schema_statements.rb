@@ -8,7 +8,7 @@ module PGInheritance
       INDEX_OPTIONS = %i[unique using where orders name].freeze
 
       def create_table(table_name, options = {})
-        parent_table = options.delete(:inherited_from)
+        parent_table = options.delete(:inherits)
 
         prepare_options(parent_table, options)
 
@@ -25,7 +25,7 @@ module PGInheritance
       end
 
       def remove_pk_option(options)
-        return unless options[:inherited_from]
+        return unless options[:inherits]
 
         options[:id] = false
         options.delete(:primary_key)
