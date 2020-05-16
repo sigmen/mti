@@ -5,10 +5,12 @@ module PGInheritance
     module SchemaStatements
       include PGInheritance::ActiveRecord::Inheritable
 
-      def create_table(table_name, options = {})
-        inherited_table = options.delete(:inherited_from)
+      INDEX_OPTIONS = %i[unique using where orders name].freeze
 
-        prepare_options(inherited_table, options)
+      def create_table(table_name, options = {})
+        parent_table = options.delete(:inherited_from)
+
+        prepare_options(parent_table, options)
 
         table_name = prepare_table_name(table_name, options)
 
